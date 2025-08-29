@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Player Companion",
+	title: "🎲 Player Companion",
 	description: "À toi de jouer !",
 };
 
