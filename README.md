@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧙‍♂️ Cool Adventures – D&D Companion Webapp
 
-## Getting Started
+This project is a **companion app** I’m building to bring more fun, immersion, and fluidity to my Dungeons & Dragons sessions with friends.
 
-First, run the development server:
+## Features (planned & in progress)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Character sheets** – Keep track of stats, abilities, and equipment
+- **Inventory & notes** – Manage loot, gold, and campaign notes
+- **Minigames** – Dice roller, Baldur’s bones, drinking challenges, and more
+- **Wheel of Chaos** – A random decision-maker for those “party cohesion” moments
+- **Player view** – Each player can log in and access their own sheet
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Goal
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The idea is to make sessions smoother by centralizing the **mechanical** (tracking sheets, loot, etc.) while adding a layer of **fun randomness** with minigames that fit the D&D vibe.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech stack (early draft)
 
-## Learn More
+- **TypeScript everywhere** (front & back)
+- **Next.js** (React, SSR, and API routes)
+- **TailwindCSS** for UI
+- **Supabase + Prisma** for database and auth
+- **Socket.IO / Realtime** for multiplayer interactions
 
-To learn more about Next.js, take a look at the following resources:
+## Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a work in progress. Expect experiments, broken features, and lots of dice rolls 🎲.
