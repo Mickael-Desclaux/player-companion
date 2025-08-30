@@ -14,17 +14,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     })
   ],
   callbacks: {
-    session({ session, token }) {
-      if (token.sub) {
-        session.user.id = token.sub
+    session({ session, user }) {
+      if (user) {
+        session.user.id = user.id
       }
       return session
-    },
-    jwt({ user, token }) {
-      if (user) {
-        token.sub = user.id
-      }
-      return token
     },
   },
 })
