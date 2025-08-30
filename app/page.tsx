@@ -1,7 +1,22 @@
-export default function Home() {
+import AuthButton from "./components/auth-button";
+import { auth } from "../auth";
+
+export default async function Home() {
+	let session;
+	try {
+		session = await auth();
+	} catch (error) {
+		console.error("Auth error:", error);
+		session = null;
+	}
+	const userName = session?.user?.name || "voyageur";
+
 	return (
 		<div className="p-4">
-			<h1 className="text-center text-xl">🐉 Bonjour, voyageur !</h1>
+			<div className="flex justify-between items-center mb-4">
+				<h1 className="text-center text-xl">🐉 Bonjour, {userName} !</h1>
+				<AuthButton />
+			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center p-4 gap-2">
 				<div>
 					<h2>📜 Character sheet</h2>
