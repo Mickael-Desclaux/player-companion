@@ -43,11 +43,11 @@ export default function AuthButton() {
 	}
 
 	return (
-		<button
+		<div
 			onClick={() => signIn("google")}
-			className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+			className="rounded-sm bg-slate-100 p-2 text-black"
 		>
 			Connexion
-		</button>
+		</div>
 	);
 }
